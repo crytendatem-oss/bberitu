@@ -1,67 +1,101 @@
 header {
-    background-color:blueviolet;
+    background-color:rgb(102, 91, 77);
     text-align:center;
     font-size: 3em;
     size: 3em;
 }
+
+.title {
+    color: pink;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px black;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.title {
+    animation: parpadeo 1s infinite;
+}
+
+
+
 main {
     background-color: beige;
-    height: 135vh;
+    height: 150vh;
     width: 70%;
     margin: auto;
     font-size: 20px;
     font-family: helvetica;
     text-align: center;
+    container{ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     text-shadow: 2px 2px 5px rgb(192, 96, 141);
+     margin: auto;
+     color: rgb(85, 61, 65);
+    }
 }
 
 img {
     width: 50%;
-    margin: auto;
-    align-items: center;
-    display: block;
-    @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    49% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+    margin: 50px auto;
+    align-items: left;
 }
 
 ul, ol {
-    text-align: left;
+    text-align: center;
     display: inline-block;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .unravel {
-    color:pink;
+    color:rgb(209, 108, 125);
     width:75%;
     font-size:25px;
     opacity:40%;
-    @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    49% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+    animation: parpadeo 2s infinite;
+    text-align: center;
+    margin: auto;
+    animation: rotar-agrandar 5s infinite;
 }
 
 
 body {
-    background-image: url("https://i.pinimg.com/736x/35/f4/6d/35f46d5849855bf4990dde9d9ac099c9.jpg")
+    background-image: url("https://i.pinimg.com/736x/35/f4/6d/35f46d5849855bf4990dde9d9ac099c9.jpg");
+}
+
+@keyframes agrandar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.miniicon {
+    size: 10px;
+    width: 10%;
+    animation: agrandar 2s infinite;
+}
+
+@keyframes rotar {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(0 deg); }
+    75% { transform: rotate(-30deg); }
+    100% { transform: rotate(0deg); }
+    fluid: 1s;
+}
+
+@keyframes rotar-agrandar {
+    0% { transform: rotate(0deg);  scale(1); }
+    25% { transform: rotate(30deg); scale(1.2); }
+    50% { transform: rotate(0 deg); scale(1); }
+    75% { transform: rotate(-30deg); scale(1.2); }
+    100% { transform: rotate(0deg); scale(1); }
+    fluid: 1s;
 }
