@@ -38,6 +38,8 @@ img {
     margin: 30px auto;
     align-items: left;
     animation: mover 2s infinite;
+    border-radius: 10px;
+    border: 2px solid rgb(192, 96, 141);
 }
 
 ul, ol {
@@ -64,14 +66,18 @@ body {
 
 @keyframes agrandar {
     0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    30% { transform: scale(1.2); }
+    70% { transform: scale(1); }
     100% { transform: scale(1); }
 }
 
 .miniicon {
     width: 10%;
     animation: agrandar 2s infinite;
+
     margin:0;
+    border-radius: 10px;
+    border: 0.5px solid rgb(80, 55, 55);
 }
 
 @keyframes rotar {
@@ -153,6 +159,8 @@ ul {
 
 @keyframes mover {
     0% { transform: translateX(0); }
-    50% { transform: translateX(20px); }
-    100% { transform: translateX(0); }
+    33% { transform: translateX(100px); }
+    66% { transform: translateX(-100px); }
+    100% { transform: translateX(0px); }
+    timing-function: ease-in-out;
 }
