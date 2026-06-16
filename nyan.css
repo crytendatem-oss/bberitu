@@ -1,0 +1,32 @@
+header {
+    background-color:blueviolet;
+    text-align:center;
+    font-size: 3em;
+    size: 3em;
+}
+main {
+    background-color: beige;
+    height: 135vh;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-family: helvetica;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    display: block;
+}
+
+ul, ol {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/736x/9f/20/b4/9f20b4c07b13725de3eeee365509eb9a.jpg")
+}
