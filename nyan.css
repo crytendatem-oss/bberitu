@@ -37,7 +37,7 @@ img {
     width: 50%;
     margin: 30px auto;
     align-items: left;
-    animation: mover 2s infinite;
+    animation: mover 5s infinite;
     border-radius: 10px;
     border: 2px solid rgb(192, 96, 141);
 }
@@ -163,4 +163,19 @@ ul {
     66% { transform: translateX(-100px); }
     100% { transform: translateX(0px); }
     timing-function: ease-in-out;
+}
+
+.gif {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: left;
+    animation: none;
+}
+.hades{
+  font-family: "Ole", cursive;
+  font-size: 50px;
+  font-style: italic;
+  margin: auto;
+  color:rgb(70, 48, 48)
 }
