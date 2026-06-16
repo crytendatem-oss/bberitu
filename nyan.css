@@ -37,7 +37,7 @@ img {
     width: 50%;
     margin: 30px auto;
     align-items: left;
-    animation: mover 5s infinite;
+    animation: mover 6s infinite;
     border-radius: 10px;
     border: 2px solid rgb(192, 96, 141);
 }
