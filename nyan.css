@@ -46,6 +46,19 @@ ul, ol {
     width:75%;
     font-size:25px;
     opacity:40%;
+    @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 
